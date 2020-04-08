@@ -1,0 +1,40 @@
+body {
+  font-family: 'Courier New', monospace; /* タイマーの表示が崩れないように等幅フォント */
+  font-size: 14px;
+  background: #eee;
+}
+
+.container {
+  margin: 20px auto; /* 幅を設定しつつ中央揃えに */
+  width: 270px; /* ボタンは80pxが3つで240px、間に15pxずつ入れたい */
+  background: #fff;
+  padding: 15px;
+  text-align: center; /* 文字は全体的に中央揃え */
+}
+
+#timer {
+  background: #ddd;
+  height: 120px; /* 上下中央揃え */
+  line-height: 120px; /* 上下中央揃え */
+  font-size: 40px;
+  margin-bottom: 15px; /* ボタンとの距離を作る */
+}
+
+.btn {
+  width: 80px;
+  height: 45px;
+  line-height: 45px; /* 上下中央揃えに */
+  background: #ddd;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none; /* ボタンを連打するとテキストが選択されるのを防ぐ */
+}
+
+.controls { /* ボタンを横に並べる */
+  display: flex;
+  justify-content: space-between; /* あいだに余白を空ける */
+}
+
+.inactive { /* ボタンが押せないように見えるスタイルのため */
+  opacity: 0.6;
+}
